@@ -2,7 +2,14 @@
 def ask_question(): 
     """Print out a question"""
     print ("What is Mickey’s pet dogs name?")
-    #write code
+    print ("What animal shallowed a clock in Peter Pan?")
+    print ("Who is the first Disney princess?")
+    print ("What U.S. city is The Princess and The Frog set in?")
+    print ("In The Lion King, where does Mufasa and his family live?")
+    print ("In the Little Mermaid, what is the name of Prince Eric's dog?")
+    print ("In Peter pan, what is the way to Neverland?")
+    print ("What is the name of Cinderella's mice?")
+    print ("In Monster's Inc, what is Sulley's full name?")
 
 def multiple_choice(): 
     """Print out multiple choice options"""
@@ -38,7 +45,7 @@ def play_game():
            ['In the Little Mermaid, what is the name of Prince Eric's dog?', ['a. Dog', 'b. Pluto', 'c. Max', 'd. Mike'], 'c'],
            ['In Peter Pan, what is the way to Neverland?', [‘a. First star to the right and straight on  til morning', 'b. Second star to the left and straight on til morning', 'c. Third star to the right and straight on til morning','d. Second star to the right and straight on til morning'], 'd'],
            ['What is the name of Cinderella's mice?', ['a. Jesse and Goose', 'b. Jess and Jack-Jack', 'c. Gus and Jaq', 'd. Wes and Jess'], 'c'],
-           ['In Monsters Inc., what is Sully's full name?', ['a. Jim A Sullivan', 'b. Sullivan', 'c. J P Sullivan', 'd. James P Sullivan'], 'd']]: 
+           ['In Monster's Inc., what is Sully's full name?', ['a. Jim A Sullivan', 'b. Sullivan', 'c. J P Sullivan', 'd. James P Sullivan'], 'd']]: 
         print(question)
         print(choices)
         user_answer= raw_input("What is your answer?") 
