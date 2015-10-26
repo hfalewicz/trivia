@@ -14,11 +14,15 @@ def ask_question():
 def multiple_choice(): 
     """Print out multiple choice options"""
    print("a. Donald", "b. Pluto", "c. Goofy", "d. Daisy")
-    #write code
     print("a. Tiger", "b. Parrot", "c. Crocodile", "d. Shark")
     print("a. Snow White", "b. Pocahontas", "c. Tiana", "d. Cinderella")
     print("a. Nashville", "b. New York", "c. Atlanta", "d. New Orleans")
     print("a. Love Rock", "b. Pride Rock", "c. Justice Rock", "d. Peace Rock")
+    print("a. Gold", "b. Silver", "c. Bronze", "d. None of the above")
+    print("a. Dog", "b. Pluto", "c. Max", "d. Mike")
+    print("a. First star to the right and straight on  til morning", "b. Second star to the left and straight on til morning", "c. Third star to the right and straight on til morning","d. Second star to the right and straight on til morning")
+    print("a. Jesse and Goose", "b. Jess and Jack-Jack", "c. Gus and Jaq", "d. Wes and Jess")
+    print("a. Jim A Sullivan", "b. Sullivan", "c. J P Sullivan", "d. James P Sullivan")
 
 def answer(): 
     """Correct answer for each question"""
