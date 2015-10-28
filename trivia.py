@@ -14,7 +14,7 @@ def ask_question():
 def multiple_choice(): 
     """Print out multiple choice options"""
     print("a. Donald", "b. Pluto", "c. Goofy", "d. Daisy")
-    print("a. Tiger", "b. Parrot", "c. Crocodile", "d. Shark")
+    print("a. Tiger", "b. Parrot", "c. Crocodile", "d. Shark") 
     print("a. Snow White", "b. Pocahontas", "c. Tiana", "d. Cinderella")
     print("a. Nashville", "b. New York", "c. Atlanta", "d. New Orleans")
     print("a. Love Rock", "b. Pride Rock", "c. Justice Rock", "d. Peace Rock")
@@ -63,7 +63,6 @@ def play_game():
             print ("You got the problem correct!")
         else:
             print ("The correct answer was", correct)
-        print ("You have completed all questions. Thank you for playing.")
 
 
 #test functions
@@ -79,3 +78,5 @@ def test_answer():
 def test_user_answer(): 
     print (question_and_)
     answer= raw_input("What is your answer?") 
+
+play_game()
