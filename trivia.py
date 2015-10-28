@@ -53,14 +53,14 @@ def play_game():
            ["In Peter Pan, what is the way to Neverland?", ["a. First star to the right and straight on  til morning", "b. Second star to the left and straight on til morning", "c. Third star to the right and straight on til morning","d. Second star to the right and straight on til morning"], "d"],
            ["What is the name of Cinderella's mice?", ["a. Jesse and Goose", "b. Jess and Jack-Jack", "c. Gus and Jaq", "d. Wes and Jess"], "c"],
            ["In Monsters Inc., what is Sulley's full name?", ["a. Jim A Sullivan", "b. Sullivan", "c. J P Sullivan", "d. James P Sullivan"], "d"]
-   ]: 
-        print(question)
-        print(choices)
-        user_answer= raw_input("What is your answer?")
-        if user_answer==correct:
-            print "You got the problem correct!"
-        else:
-            print "The correct answer was", correct
+   ]:
+       print question
+       print choices
+       user_answer=raw_input("What is your answer?")
+       if user_answer==correct:
+           print "You got the problem correct!"
+       else:
+           print "The correct answer was", correct
 
 
 #test functions
