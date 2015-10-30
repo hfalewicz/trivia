@@ -41,27 +41,16 @@ def user_answer():
     """Figure out is user's answer is right or wrong"""
     raw_input("What is your answer?") 
 
-def play_game(): 
-   for question,choices,correct in [
-           ["What is Mickey's pet dogs' name?", ["a. Donald", "b. Pluto", "c. Goofy", "d. Daisy"], "b"],
-           ["What animal swallowed a clock in Peter Pan?", ["a. Tiger", "b. Parrot", "c. Crocodile", "d.  Shark"], "c"],
-           ["Who is the first Disney princess?", ["a. Snow White","b. Pocahontas", "c. Tiana"," d. Cinderella"], "a"],
-           ["What U.S. city is The Princess and The Frog set in?", ["a. Nashville", "b. New York", "c. Altana", "d. New Orleans"], "d"],
-           ["In the Lion King, where does Mufasa and his family live?", ["a. Love Rock","b. Pride Rock", "c. Justice Rock", "d. Peace Rock"], "b"],
-           ["During the ballroom scene of Beauty & the Beast, what color is Belle's  dress?", ["a. Gold", "b. Silver", "c. Bronze", "d. None of the above"], "a"],
-           ["In the Little Mermaid, what is Prince Eric's dog's name?", ["a. Dog", "b. Pluto", "c. Max", "d. Mike"], "c"],
-           ["In Peter Pan, what is the way to Neverland?", ["a. First star to the right and straight on  til morning", "b. Second star to the left and straight on til morning", "c. Third star to the right and straight on til morning","d. Second star to the right and straight on til morning"], "d"],
-           ["What is the name of Cinderella's mice?", ["a. Jesse and Goose", "b. Jess and Jack-Jack", "c. Gus and Jaq", "d. Wes and Jess"], "c"],
-           ["In Monsters Inc., what is Sulley's full name?", ["a. Jim A Sullivan", "b. Sullivan", "c. J P Sullivan", "d. James P Sullivan"], "d"]
-   ]:
-       print question
-       print choices
-       user_answer=raw_input("What is your answer?")
-       if user_answer==correct:
-           print "You got the problem correct!"
-       else:
-           print "The correct answer was", correct
-
+def play_game():
+    ask_question()
+    multiple_choice()
+    if user_answer is not "a","b","c","d":
+        print "Your choice is not valid."
+        user_answer
+    if user_answer==answer:
+        print "Your answer is correct."
+    else:
+        print "The correct answer is", correct 
 
 #test functions
 def test_ask_question(): 
