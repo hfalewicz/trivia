@@ -11,6 +11,7 @@ def ask_question():
     print "In Peter pan, what is the way to Neverland?"
     print "What is the name of Cinderella's mice?"
     print "In Monster's Inc, what is Sulley's full name?"
+        print x=1
 
 #Ruby and Hannah
 def multiple_choice(): 
@@ -49,6 +50,9 @@ def user_answer():
 def play_game():
     ask_question()
     multiple_choice()
+    if user_answer is not "a","b","c","d":
+        print "Your choice is not valid."
+        user_answer
     if user_answer==answer:
         print "Your answer is correct."
     else:
