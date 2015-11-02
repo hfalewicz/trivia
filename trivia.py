@@ -1,4 +1,5 @@
 #regular functions
+#Ruby and Hannah
 def ask_question(): 
     """Print out a question"""
     print "What is Mickey's pet dogs name?"
@@ -11,6 +12,7 @@ def ask_question():
     print "What is the name of Cinderella's mice?"
     print "In Monster's Inc, what is Sulley's full name?"
 
+#Ruby and Hannah
 def multiple_choice(): 
     """Print out multiple choice options"""
     print "a. Donald", "b. Pluto", "c. Goofy", "d. Daisy"
@@ -24,6 +26,7 @@ def multiple_choice():
     print "a. Jesse and Goose", "b. Jess and Jack-Jack", "c. Gus and Jaq", "d. Wes and Jess"
     print "a. Jim A Sullivan", "b. Sullivan", "c. J P Sullivan", "d. James P Sullivan"
 
+#Ruby and Hannah
 def answer(): 
     """Correct answer for each question"""
     correct_1= "b"
@@ -37,10 +40,12 @@ def answer():
     correct_9= "c"
     correct_10= "d" 
 
+#Ruby and Hannah
 def user_answer():
     """Figure out is user's answer is right or wrong"""
     raw_input("What is your answer?") 
 
+#Hannah
 def play_game():
     ask_question()
     multiple_choice()
@@ -52,16 +57,20 @@ def play_game():
     else:
         print "The correct answer is", correct 
 
-#test functions
+#test functions- don't actually work but can't figure out why
+#Ruby and Hannah
 def test_ask_question(): 
     print (question)
 
+#Ruby and Hannah
 def test_multiple_choice():    
     print (multiple_choice)
 
+#Ruby and Hannah
 def test_answer(): 
     print (question_and_answer)
 
+#Ruby and Hannah
 def test_user_answer(): 
     print (question_and_)
     answer= raw_input("What is your answer?") 
