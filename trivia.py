@@ -47,9 +47,10 @@ def play_game():
    ]: 
         ask_question(question)
         user_answer = multiple_choice(choices)
-        if user_answer is not "a","b","c","d":
-            print "Your choice is not valid."
-            user_answer=raw_input("Try again. What is your choice?")
+        #HOW TO MAKE IT ONLY TAKE A-D FOR INPUT
+        #if user_answer is not in range("d"):
+            #print "Your choice is not valid."
+            #user_answer=raw_input("Try again. What is your choice?")
         if user_answer==correct:
             print "You got the problem correct!"
         else:
