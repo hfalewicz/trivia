@@ -22,8 +22,6 @@ def play_game():
    for question,choices,correct in [
            ["What is Mickey's pet dogs' name?", ["a. Donald", "b. Pluto", "c. Goofy", "d. Daisy"], "b"],
            ["What animal swallowed a clock in Peter Pan?", ["a. Tiger", "b. Parrot", "c. Crocodile", "d.  Shark"], "c"],
-           ["What is Mickey's pet dog's name?", ["a. Donald", "b. Pluto", "c. Goofy", "d. Daisy"], "b"],
-           ["What animal swallowed a clock in Peter Pan?", ["a. Tiger", "b. Parrot", "c. Crocodile", "d. Shark"], "c"],
            ["Who is the first Disney princess?", ["a. Snow White","b. Pocahontas", "c. Tiana"," d. Cinderella"], "a"],
            ["What U.S. city is The Princess and The Frog set in?", ["a. Nashville", "b. New York", "c. Altana", "d. New Orleans"], "d"],
            ["In the Lion King, where does Mufasa and his family live?", ["a. Love Rock","b. Pride Rock", "c. Justice Rock", "d. Peace Rock"], "b"],
