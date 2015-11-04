@@ -2,32 +2,20 @@
 #Ruby and Hannah
 def ask_question(question): 
     """Print out a question"""
-    print question
+    print " "
+    print " "
+    print " "
+    print "*" * (len(question)+4)
+    print "*", question, "*"
+    print "*" * (len(question)+4)
 
 #Ruby and Hannah
 def multiple_choice(choices): 
     """Print out multiple choice options"""
-    print choices
-    return raw_input('What is your choice?') 
-
-#Ruby and Hannah
-def answer(): 
-    """Correct answer for each question"""
-    correct_1= "b"
-    correct_2= "c"
-    correct_3= "a"
-    correct_4= "d"
-    correct_5= "b"
-    correct_6= "a"
-    correct_7= "c"
-    correct_8= "d"
-    correct_9= "c"
-    correct_10= "d" 
-
-#Ruby and Hannah
-#def user_answer():
-    #"""Figure out is user's answer is right or wrong"""
-    #raw_input("What is your answer?") 
+    print " " 
+    print "---", choices, "---"
+    print " " 
+    return raw_input("~~~ What is your choice? ~~~      ") 
 
 #Hannah
 def play_game(): 
@@ -47,14 +35,14 @@ def play_game():
    ]: 
         ask_question(question)
         user_answer = multiple_choice(choices)
-        #HOW TO MAKE IT ONLY TAKE A-D FOR INPUT
-        #if user_answer is not in range("d"):
-            #print "Your choice is not valid."
-            #user_answer=raw_input("Try again. What is your choice?")
         if user_answer==correct:
-            print "You got the problem correct!"
+            print " "
+            print "" 
+            print "*** You got the problem correct! ***"
         else:
-            print "The correct answer was", correct
+            print " "
+            print " " 
+            print "--- The correct answer was", correct, "---"
 
 #test functions
 def test_ask_question():  # gift from Mr. H
