@@ -14,8 +14,13 @@ def multiple_choice(choices):
     """Print out multiple choice options"""
     print " " 
     print "---", choices, "---"
-    print " " 
-    return raw_input("~~~ What is your choice? ~~~      ") 
+    print " "
+    user_answer= raw_input("~~~ What is your choice? ~~~      ")
+    for choice in choices:
+        if choice.find(user_answer)==0:
+            return user_answer
+    print "Your answer is not valid, try again."
+    return multiple_choice(choices)
 
 #Hannah
 def play_game(): 
@@ -27,12 +32,12 @@ def play_game():
            ["In the Lion King, where does Mufasa and his family live?", ["a. Love Rock","b. Pride Rock", "c. Justice Rock", "d. Peace Rock"], "b"],
            ["During the ballroom scene of Beauty & the Beast, what color is Belle's  dress?", ["a. Gold", "b. Silver", "c. Bronze", "d. None of the above"], "a"],
            ["In the Little Mermaid, what is Prince Eric's dog's name?", ["a. Dog", "b. Pluto", "c. Max", "d. Mike"], "c"],
-           ["In Peter Pan, what is the way to Neverland?", ["a. First star to the right and straight on  til morning", "b. Second star to the left and straight on til morning", "c. Third star to the right and straight on til morning","d. Second star to the right and straight on til morning"], "d"],
+           ["In Peter Pan, what number star goes to Neverland?", ["a. First", "b. Second", "c. Third","d. Fourth"], "b"],
            ["What is the name of Cinderella's mice?", ["a. Jesse and Goose", "b. Jess and Jack-Jack", "c. Gus and Jaq", "d. Wes and Jess"], "c"],
            ["In Monsters Inc., what is Sulley's full name?", ["a. Jim A Sullivan", "b. Sullivan", "c. J P Sullivan", "d. James P Sullivan"], "d"]
    ]: 
         ask_question(question)
-        user_answer = multiple_choice(choices)
+        user_answer= multiple_choice(choices) 
         if user_answer==correct:
             print " "
             print "" 
@@ -41,6 +46,18 @@ def play_game():
             print " "
             print " " 
             print "--- The correct answer was", correct, "---"
+   print " "
+   print " "
+   print " "
+   print "*" * 61
+   print "*" * 61
+   print "*" * 61
+   print "*** You have completed all questions. Thanks for playing! ***"
+   print "*" * 61
+   print "*" * 61
+   print "*" * 61
+   print " "
+   print " " 
 
 #test functions
 def test_ask_question():  # gift from Mr. H
@@ -56,3 +73,5 @@ def test_multiple_choice():     # gift from Mr. H
     multiple_choice(['You have no choice! Ha!'])
 
 play_game()
+#test_ask_question()
+#test_multiple_choice()
